@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#bg {
+    background-image:  linear-gradient(180deg, rgba(37, 186, 235, 0.306) 80%, rgba(8, 180, 232, 0.272) 52%), url('../../assets/images/church.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 100vh;
+}
