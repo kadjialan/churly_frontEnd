@@ -14,7 +14,7 @@ export default function Landing() {
             <p>We are here to help you live a faithful life with Christ</p>
             <h1> PROVIDE TOP TESTIMONIALS AND INMPACT THE COMMUNITY</h1>
             <div className={Styles.buttons_holder}>
-              <button className={Styles.signup}>SING UP</button>
+              <button className={Styles.signup} onClick={()=> navigate('/signUp') }>SING UP</button>
               <button  className={Styles.signup} onClick={()=> navigate('/signIn') }>SING IN</button>
             </div>
           </div>

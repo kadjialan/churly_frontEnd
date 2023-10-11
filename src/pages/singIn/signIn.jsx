@@ -2,6 +2,7 @@ import React from "react";
 import Styles from "./signIn.module.css";
 import Hands from "../../assets/images/hands.jpg";
 import { AiOutlineMail, AiOutlineLock } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 export default function SignIn() {
   return (
@@ -30,8 +31,8 @@ export default function SignIn() {
             <div className={Styles.buttons_holder}>
               <button className={Styles.signup}>Login</button>
               <div className={Styles.row}>
-              <p className={Styles.text}>Do not have account,</p>
-              <p className={Styles.colored}>signUp</p>
+              <p className={Styles.text}>Do not have account?</p>
+              <Link to='/signUp' className={Styles.colored}>signUp</Link>
               </div>
             </div>
           </div>
