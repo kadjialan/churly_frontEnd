@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-#bg {
+.bg {
   /*     background-image:  linear-gradient(180deg, rgba(37, 186, 235, 0.306) 80%, rgba(8, 180, 232, 0.272) 52%), url('../../assets/images/church.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -54,8 +54,15 @@
   font-weight: bolder;
   font-size: 1.3rem;
   border-radius: 12px;
-  border: 3px solid #5271ff;
-  background-color: transparent;
+  /* border: 3px solid #5271ff; */
+  background-color: #066cbd94;
+  border: 3px solid #066cbd94;
+  /* background-color: transparent; */
   cursor: pointer;
   color: #fff;
+}
+
+.signup:hover {
+  background-color: transparent;
+  border: 3px solid #067bdb94;
 }
