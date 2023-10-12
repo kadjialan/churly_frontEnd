@@ -1,14 +1,14 @@
 import React from "react";
 import Styles from "./signIn.module.css";
-import Hands from "../../assets/images/hands.jpg";
 import { AiOutlineMail, AiOutlineLock } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Bar from "../../components/welcomeBar/Bar";
 
 export default function SignIn() {
   return (
     <div className={Styles.container}>
       <div className={Styles.bg}>
-        <img src={Hands} alt="hands" className={Styles.picture} />
+        <Bar />
         <div className={Styles.right}>
           <h2>Login to continue</h2>
           <div className={Styles.signIn__content}>
@@ -31,8 +31,10 @@ export default function SignIn() {
             <div className={Styles.buttons_holder}>
               <button className={Styles.signup}>Login</button>
               <div className={Styles.row}>
-              <p className={Styles.text}>Do not have account?</p>
-              <Link to='/signUp' className={Styles.colored}>signUp</Link>
+                <p className={Styles.text}>Do not have account?</p>
+                <Link to="/signUp" className={Styles.colored}>
+                  signUp
+                </Link>
               </div>
             </div>
           </div>

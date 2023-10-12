@@ -1,14 +1,14 @@
 import React from "react";
 import Styles from "./Landing.module.css";
-import Hands from "../../assets/images/hands.jpg";
 import { useNavigate } from "react-router-dom";
+import Bar from "../../components/welcomeBar/Bar";
 
 export default function Landing() {
   const navigate = useNavigate()
   return (
     <div className={Styles.container}>
       <div className={Styles.bg} >
-        <img src={Hands} alt="hands" className={Styles.picture} />
+        <Bar/>
         <div className={Styles.right}>
           <div className={Styles.right__content}>
             <p>We are here to help you live a faithful life with Christ</p>
