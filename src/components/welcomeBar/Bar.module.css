@@ -1,0 +1,38 @@
+.nav {
+  position: absolute;
+  top: 0;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+  background-color: #a17f7342;
+}
+
+.main {
+  position: relative;
+  display: flex;
+}
+
+.nav h1 {
+  color: #fff;
+  font-family: "Lobster", sans-serif;
+}
+
+.picture {
+  width: 100%;
+  height: 100vh;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+}
+
+
+@media screen and (max-width: 425px) {
+  .picture {
+    height: 50vh;
+  }
+  
+} 
