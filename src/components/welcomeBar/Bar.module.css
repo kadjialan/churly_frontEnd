@@ -28,3 +28,11 @@
   height: 70px;
   margin-left: 20px;
 }
+
+
+@media screen and (max-width: 425px) {
+  .picture {
+    height: 50vh;
+  }
+  
+} 
