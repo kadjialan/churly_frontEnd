@@ -110,3 +110,28 @@ input:focus {
   align-items: center;
   gap: 3px;
 }
+
+
+@media screen and (max-width: 425px) {
+  .bg {
+    flex-direction: column;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .right h2 {
+    text-align: center;
+  }
+
+
+  .signup__content input {
+    width: 75vw;
+  }
+
+  .signup {
+    padding: 8px 0;
+    width: 100%;
+  }  
+}
