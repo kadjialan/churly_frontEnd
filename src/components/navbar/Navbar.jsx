@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./Navbar.module.css";
 import icon from "../../assets/images/logo1.png";
 import { FaRegUser } from "react-icons/fa";
+import { ChurchlyContext } from "../../Context";
 
 export default function Navbar() {
+  const {setSidebarVisible } = useContext(ChurchlyContext);
   return (
     <div className={styles.navbar}>
       <div className={styles.logo}>
@@ -16,7 +18,7 @@ export default function Navbar() {
         <li>Chats</li>
       </div>
 
-      <FaRegUser className={styles.user}  title="user"/>
+      <FaRegUser className={styles.user} onClick={() => setSidebarVisible(true)} title="user"/>
     </div>
   );
 }

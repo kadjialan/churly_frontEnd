@@ -7,44 +7,111 @@
   align-items: center;
   justify-content: center;
   font-family: sans-serif;
+  position: absolute;
 }
 
 .content {
-  background-color: #38b6ff;
+  background-color: #38b6fff1;
   padding: 20px 30px;
   border-radius: 8px;
   border: 1px solid #38b6ff;
-  color: #fff;
+  position: relative;
 }
 
 .mainContent {
-  border: 2px solid #38b6ff;
   border-radius: 8px;
   padding: 5px;
 }
 
 .content h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .content p {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .content input {
-    width: 20vw;
-    border-radius: 8px;
-    border: 2px solid #38b6ff;
-    padding: 3px 5px;
-    height: 25px;
-    font-size: large;
+  width: 20vw;
+  border-radius: 8px;
+  border-bottom: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  padding: 3px 5px;
+  height: 25px;
+  font-size: large;
 }
 
 .content textarea {
-    width: 20vw;
-    border-radius: 8px;
-    border: 2px solid #38b6ff;
-    height: 200px;
-    padding: 5px;
-    font-size: larger;
+  width: 20vw;
+  border-radius: 8px;
+  border: 2px solid #38b6ff;
+  height: 200px;
+  padding: 5px;
+  font-size: larger;
 }
+
+.upload {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.iconUpload {
+  cursor: pointer;
+  font-size: larger;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.cross {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.buttonHolder {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.buttonHolder button {
+  padding: 6px 28px;
+  border-radius: 18px;
+  font-size: larger;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.close {
+  background-color: transparent;
+  border: 2px solid #0675b6;
+}
+
+.close:hover {
+  background-color: #0676b6c2;
+  color: #fff;
+}
+
+.post {
+  border: 2px solid #0675b6;
+}
+
+.post:hover {
+  background-color: #0676b6c2;
+  color: #fff;
+}
+
