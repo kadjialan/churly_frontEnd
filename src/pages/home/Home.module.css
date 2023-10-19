@@ -39,3 +39,16 @@
 .Typing {
   height: 90%;
 }
+
+
+@media screen and (max-width: 425px) {
+  .Typing {
+    width: 85vw;
+    height: 70%;
+  }
+
+  .plus {
+    margin-right: 10px;
+  }
+  
+} 

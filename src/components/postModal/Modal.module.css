@@ -16,6 +16,8 @@
   border-radius: 8px;
   border: 1px solid #38b6ff;
   position: relative;
+  width: 70vw;
+    max-width: 400px;
 }
 
 .mainContent {
@@ -32,7 +34,7 @@
 }
 
 .content input {
-  width: 20vw;
+  width: 100%;
   border-radius: 8px;
   border-bottom: 2px solid #fff;
   border-top: none;
@@ -45,7 +47,7 @@
 }
 
 .content textarea {
-  width: 20vw;
+  width: 100%;
   border-radius: 8px;
   border: 2px solid #38b6ff;
   height: 200px;

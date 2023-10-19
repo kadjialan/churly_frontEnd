@@ -14,33 +14,33 @@
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .links {
-    display: flex;
-    gap: 5vw;
+  display: flex;
+  gap: 5vw;
 }
 
 li {
-    list-style: none;
-    font-size: larger;
-    font-weight: bold;
-    margin-left: -10px;
-    cursor: pointer;
-    padding: 4px 6px;
-    border-radius: 10px;
+  list-style: none;
+  font-size: larger;
+  font-weight: bold;
+  margin-left: -10px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 10px;
 }
 
 .user {
-    color: black;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-    font-weight: bold;
-    cursor: pointer;
+  color: black;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .active {
@@ -48,4 +48,22 @@ li {
   border: 1px solid #066cbd94;
   padding: 4px 6px;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 425px) {
+  .navbar {
+    padding: 7px 10px;
+  }
+  .navbar h3 {
+    display: none;
+  }
+
+  .links {
+    gap: 3vw;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
 }
