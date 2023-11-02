@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import styles from "./Modal.module.css";
-import { ImFolderUpload, ImCross } from "react-icons/im";
+import { ImCross } from "react-icons/im";
 import { ChurchlyContext } from "../../Context";
 
 export default function Modal() {
@@ -19,10 +19,10 @@ export default function Modal() {
       <div className={styles.mainContent}>
         <div className={styles.content}>
           <h2>Post testimonial</h2>
-          <>
+          <div className="nameInput">
             <p>Name</p>
             <input type="text" />
-          </>
+          </div>
 
           <>
             <p>Testimonial</p>
@@ -30,9 +30,8 @@ export default function Modal() {
           </>
 
           <div className={styles.upload}>
-            <p>Upload image</p>
-            <input type="file" onChange={handleChange} />
-            <ImFolderUpload title="upload" className={styles.iconUpload} />
+            <p>Image</p>
+            <input className="uploadInput" type="file" onChange={handleChange} />
           </div>
 
           <img src={file} width={200} alt="images" />

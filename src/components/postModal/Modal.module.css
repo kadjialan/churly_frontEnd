@@ -1,5 +1,5 @@
 .container {
-  background-color: rgb(78 77 77 / 23%);
+  background-color: rgba(115, 113, 113, 0.842);
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -17,7 +17,7 @@
   border: 1px solid #fff;
   position: relative;
   width: 70vw;
-    max-width: 400px;
+  max-width: 400px;
 }
 
 .mainContent {
@@ -46,11 +46,15 @@
   font-size: large;
 }
 
+.uploadInput {
+  width: 80%;
+} 
+
 .content textarea {
   width: 100%;
   border-radius: 8px;
   border: 2px solid #4253b2;
-  height: 200px;
+  height: 170px;
   padding: 5px;
   font-size: larger;
 }
@@ -59,7 +63,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 104%;
 }
 
 .iconUpload {
@@ -117,4 +121,3 @@
 .post:hover {
   background-color: #4253b2e4;
 }
-
