@@ -1,0 +1,123 @@
+.container {
+  background-color: rgba(115, 113, 113, 0.842);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  position: absolute;
+}
+
+.content {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  position: relative;
+  width: 70vw;
+  max-width: 400px;
+}
+
+.mainContent {
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.content h2 {
+  text-align: center;
+}
+
+.content p {
+  font-weight: bold;
+}
+
+.content input {
+  width: 100%;
+  border-radius: 8px;
+  border-bottom: 2px solid #4253b2;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  padding: 3px 5px;
+  height: 25px;
+  font-size: large;
+}
+
+.uploadInput {
+  width: 80%;
+} 
+
+.content textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #4253b2;
+  height: 170px;
+  padding: 5px;
+  font-size: larger;
+}
+
+.upload {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 104%;
+}
+
+.iconUpload {
+  cursor: pointer;
+  font-size: larger;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.cross {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.buttonHolder {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.buttonHolder button {
+  padding: 6px 28px;
+  border-radius: 18px;
+  font-size: larger;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.close {
+  background-color: transparent;
+  border: 2px solid #4253b2;
+}
+
+.close:hover {
+  background-color: #4253b2e4;
+  color: #fff;
+}
+
+.post {
+  border: 2px solid #4253b2;
+  background-color: #4253b2;
+  color: #fff;
+}
+
+.post:hover {
+  background-color: #4253b2e4;
+}

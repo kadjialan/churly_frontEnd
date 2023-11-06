@@ -5,17 +5,26 @@ import { Link } from "react-router-dom";
 import Bar from "../../components/welcomeBar/Bar";
 
 export default function SignIn() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { target } = e;
+    const user = {
+      email: target.email.value,
+      password: target.password.value,
+    };
+    console.log(user);
+  };
   return (
     <div className={Styles.container}>
       <div className={Styles.bg}>
         <Bar />
-        <div className={Styles.right}>
+        <form onSubmit={handleSubmit} className={Styles.right}>
           <h2>Login to continue</h2>
           <div className={Styles.signIn__content}>
             <>
               <label>Email</label>
               <div className={Styles.input_holder}>
-                <input type="email" required />
+                <input type="email" name="email" required />
                 <AiOutlineMail className={Styles.icon} />
               </div>
             </>
@@ -23,13 +32,13 @@ export default function SignIn() {
             <>
               <label>Password</label>
               <div className={Styles.input_holder}>
-                <input type="password" required />
+                <input type="password" name="password" required />
                 <AiOutlineLock className={Styles.icon} />
               </div>
             </>
 
             <div className={Styles.buttons_holder}>
-              <button className={Styles.signup}>Login</button>
+              <button type="submit" className={Styles.signup}>Login</button>
               <div className={Styles.row}>
                 <p className={Styles.text}>Do not have account?</p>
                 <Link to="/signUp" className={Styles.colored}>
@@ -38,7 +47,7 @@ export default function SignIn() {
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
