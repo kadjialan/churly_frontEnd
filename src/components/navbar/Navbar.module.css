@@ -50,6 +50,16 @@ li {
   border-radius: 10px;
 }
 
+.links {
+  color: #fff;
+  text-decoration: none;
+}
+
+.inActive {
+  background-color: 'transparent';
+  border: transparent;
+}
+
 @media screen and (max-width: 425px) {
   .navbar {
     padding: 7px 10px;
